@@ -1,28 +1,19 @@
 {
-    "name":"Example Listing",
-    "id":"com.vrchat.example-listing",
-    "url":"https://vrchat-community.github.io/template-package-listing/index.json",
-    "author":{
-        "email":"developer@vrchat.com",
-        "name":"VRChat",
-        "url":"https://hello.vrchat.com"
+    "name": "_pi_'s funky fresh VPM repository",
+    "id": "at.pimaker.vpm",
+    "url": "https://vpm.pimaker.at/index.json",
+    "author": {
+        "email": "pi+vpm@pimaker.at",
+        "name": "_pi_",
+        "url": "https://pimaker.at"
     },
-    "description":"Example listing of VRChat packages",
-    "infoLink":{
-        "url":"http://github.com/vrchat-community/template-package-listing",
-        "text":"View on GitHub"
+    "description": "A listing of all my packages available for use in the VRChat Creator Companion.",
+    "infoLink": {
+        "url": "https://github.com/pimaker/vpm-listing",
+        "text": "View on GitHub"
     },
-    "bannerUrl":"banner.png",
-    "githubRepos":[
+    "bannerUrl": "banner.png",
+    "githubRepos": [
         "vrchat-community/clientsim"
-    ],
-    "packages":[
-        {
-            "name":"com.vrchat.udonsharp",
-            "releases":[
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.7/com.vrchat.UdonSharp.zip",
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.6/com.vrchat.UdonSharp-1.1.6.zip"
-            ]
-        }
     ]
 }
