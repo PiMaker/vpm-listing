@@ -13,6 +13,6 @@
     },
     "bannerUrl": "banner.png",
     "githubRepos": [
-        "pimaker/animator-as-visual"
+        "source:pimaker/animator-as-visual"
     ]
 }
