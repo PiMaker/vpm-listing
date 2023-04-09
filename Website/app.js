@@ -24,7 +24,8 @@ const PACKAGES = {
       {{~ end ~}}
     ],
     license: "{{ package.License }}",
-    licensesUrl: "{{ package.LicensesUrl }}",
+    licensesUrl: "{{ package.LicenseUrl }}",
+    listingUrl: "{{ package.ListingUrl }}",
   },
 {{~ end ~}}
 };
@@ -150,6 +151,7 @@ const setTheme = () => {
   const packageInfoDescription = document.getElementById('packageInfoDescription');
   const packageInfoAuthor = document.getElementById('packageInfoAuthor');
   const packageInfoDependencies = document.getElementById('packageInfoDependencies');
+  const packageInfoVccUrlField = document.getElementById('packageInfoVccUrlField');
   const packageInfoKeywords = document.getElementById('packageInfoKeywords');
   const packageInfoLicense = document.getElementById('packageInfoLicense');
 
@@ -203,6 +205,10 @@ const setTheme = () => {
         depRow.textContent = `${name} @ v${version}`;
         packageInfoDependencies.appendChild(depRow);
       });
+
+      if (packageInfoVccUrlField) {
+        packageInfoVccUrlField.value = packageInfo.listingUrl;
+      }
 
       packageInfoModal.hidden = false;
 
